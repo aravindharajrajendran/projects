@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.03"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageViewAppTitleImage"
+                    android:src="@drawable/app_icon"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/stringAppTitle"
+            android:id="@+id/textViewAppTitle"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.03"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.11"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextUsername"
+                    android:layout_gravity="right"
+                    android:hint="@string/stringEmail"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/editTextPassword"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/stringPassword" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stringSignIn"
+                    android:id="@+id/buttonSignIn"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorText"
+                    android:background="@color/colorPrimary" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.46"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="217dp"
+                android:layout_height="108dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/linearlayout_bg">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <com.facebook.login.widget.LoginButton
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/fb_button_login"
+                    style="@style/ButtonText"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="45dp"
+                        android:text="@string/twitter_button"
+                        android:id="@+id/tw_button_login"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        style="@style/ButtonText"
+                        android:textAllCaps="false"
+                        android:layout_weight="0.03"
+                        android:background="@drawable/layers_tw_button_bg"
+                        android:layout_below="@+id/fb_button_login"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/stringResetPassword"
+                android:id="@+id/textViewResetPassword"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="center" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/stringNewHere"
+            android:id="@+id/textViewNewHere"
+            android:layout_weight="1"
+            android:textColor="@color/colorText"
+            android:gravity="right"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/stringSignUp"
+            android:id="@+id/textViewSignUp"
+            android:textColor="#ffa91e"
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textViewNewHere"
+            android:layout_toEndOf="@+id/textViewNewHere"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+</FrameLayout>

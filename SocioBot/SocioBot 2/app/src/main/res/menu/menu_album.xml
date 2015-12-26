@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/editAlbum"
+        android:title="@string/stringEditAlbum" />
+    <item
+        android:id="@+id/deleteAlbum"
+        android:title="@string/stringDeleteAlbum"/>
+</menu>

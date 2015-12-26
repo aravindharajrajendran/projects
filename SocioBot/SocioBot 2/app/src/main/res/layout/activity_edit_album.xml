@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aravindharaj.sociobot.EditAlbumActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextAlbumName1"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/stringAlbumName" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextDescription1"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/stringAlbumDescription"
+            android:singleLine="true" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchAlbumPrivacy1"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:text="@string/stringAlbumPrivacy"
+            android:layout_marginTop="5dp"
+            android:textOff="@string/stringPrivate"
+            android:textOn="@string/stringPublic" />
+
+        <com.example.aravindharaj.sociobot.ContactsCompletionView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewChooseUsers1"
+            android:hint="@string/stringAllowedUsers"
+            android:visibility="gone"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView1"
+            android:layout_marginTop="5dp"
+            android:smoothScrollbar="false"
+            android:numColumns="3" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stringSave"
+            android:id="@+id/buttonAlbumSave1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorText" />
+    </RelativeLayout>
+</LinearLayout>
