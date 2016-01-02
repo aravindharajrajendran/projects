@@ -25,3 +25,10 @@ Demo: https://youtu.be/_jQw6UFhVso
 Demo: https://youtu.be/gtRj8MPJQXY
 
 Learn more about the project here: https://github.com/aravindharajrajendran/projects/blob/master/Documentation/SocioBot%20Report.pdf
+---------------------------------------------------------------------------------------------
+
+DATABASE MANAGEMENT SYSTEMS - "BetterMe"
+
+A PHP and MySQL based Web Application developed to track activity related to the user’s health and wellbeing and provide tools for the user to analyze patterns and establish improved health habits
+
+Learn more about the project here: https://github.com/aravindharajrajendran/projects/blob/master/Documentation/BetterMe%20Report.pdf
