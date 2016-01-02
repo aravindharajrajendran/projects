@@ -24,4 +24,4 @@ Demo: https://youtu.be/_jQw6UFhVso
 6. Profile Functionality
 Demo: https://youtu.be/gtRj8MPJQXY
 
-Learn more about the project here: 
+Learn more about the project here: https://github.com/aravindharajrajendran/projects/blob/master/Documentation/SocioBot%20Report.pdf
