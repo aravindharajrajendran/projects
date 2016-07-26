@@ -41,5 +41,7 @@ BIG DATA ANALYTICS FOR COMPETITIVE ADVANTAGE - "Predictive Analysis on the Fortu
  A Big Data approach to predict which of the following factors directly impact a Fortune 500 company’s success: Company Innovation, Corporate Social Responsibility, GDP, Patents filed, Political and Election contributions
 
 Presentation: https://github.com/aravindharajrajendran/projects/blob/master/Big%20Data/Presentation.pptx
+
 Managerial Report: https://github.com/aravindharajrajendran/projects/blob/master/Big%20Data/Managerial_Report.docx
+
 Technical Report: https://github.com/aravindharajrajendran/projects/blob/master/Big%20Data/Technical_Report.docx
