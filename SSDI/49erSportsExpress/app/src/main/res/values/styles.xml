@@ -13,6 +13,7 @@
         <item name="colorPrimary">@color/colorPrimaryNoActionBar</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDarkNoActionBar</item>
         <item name="colorAccent">@color/colorAccentNoActionBar</item>
+        <item name="android:textColorHint">@color/colorAccentNoActionBar</item>
     </style>
 
 </resources>
