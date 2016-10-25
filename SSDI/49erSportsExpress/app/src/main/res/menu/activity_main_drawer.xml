@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/match_day"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Match Day" />
+        <item
+            android:id="@+id/equipment_checkin_checkout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Equipment Checkin/Checkout" />
+        <item
+            android:id="@+id/fitness_studio"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Fitness Studio" />
+        <item
+            android:id="@+id/game_history"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Game History" />
+    </group>
+
+</menu>
