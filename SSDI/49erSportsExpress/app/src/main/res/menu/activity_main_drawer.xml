@@ -4,19 +4,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/match_day"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_match_day"
             android:title="Match Day" />
         <item
             android:id="@+id/equipment_checkin_checkout"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_equipment_icon"
             android:title="Equipment Checkin/Checkout" />
         <item
             android:id="@+id/fitness_studio"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_fitness_icon"
             android:title="Fitness Studio" />
         <item
             android:id="@+id/game_history"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_action_name"
             android:title="Game History" />
         <item
             android:id="@+id/logout"

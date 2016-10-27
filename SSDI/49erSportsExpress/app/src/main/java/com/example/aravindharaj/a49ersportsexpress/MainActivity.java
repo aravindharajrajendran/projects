@@ -22,8 +22,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.makeramen.roundedimageview.RoundedTransformationBuilder;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Transformation;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -65,20 +70,47 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setCheckedItem(R.id.match_day);
         View headerView = navigationView.getHeaderView(0);
         TextView textViewNavBarName = (TextView) headerView.findViewById(R.id.textViewNavBarName);
         TextView textViewNavBarEmail = (TextView) headerView.findViewById(R.id.textViewNavBarEmail);
+        ImageView imageViewNavBar = (ImageView) headerView.findViewById(R.id.imageViewNavBar);
         textViewNavBarName.setText(sharedPreferences.getString("firstname", null) + " " + sharedPreferences.getString("lastname", null));
         textViewNavBarEmail.setText(sharedPreferences.getString("email", null));
+        Transformation transformation = new RoundedTransformationBuilder()
+                .borderWidthDp(0)
+                .cornerRadiusDp(50)
+                .oval(false)
+                .build();
+        Picasso.with(MainActivity.this).load(sharedPreferences.getString("picture", null)).fit().transform(transformation).into(imageViewNavBar);
+        headerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Class fragmentClass = UserFragment.class;
+                Fragment fragment = null;
+                try {
+                    fragment = (Fragment) fragmentClass.newInstance();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
+                int size = navigationView.getMenu().size();
+                for (int i = 0; i < size; i++) {
+                    navigationView.getMenu().getItem(i).setChecked(false);
+                }
+                drawer.closeDrawer(GravityCompat.START);
+            }
+        });
     }
 
     @Override
@@ -117,13 +149,18 @@ public class MainActivity extends AppCompatActivity
         Class fragmentClass = null;
         if (id == R.id.match_day) {
             fragmentClass = MatchDayFragment.class;
+            item.setChecked(true);
         } else if (id == R.id.equipment_checkin_checkout) {
             fragmentClass = EquipmentFragment.class;
+            item.setChecked(true);
         } else if (id == R.id.fitness_studio) {
             fragmentClass = FitnessStudioFragment.class;
+            item.setChecked(true);
         } else if (id == R.id.game_history) {
             fragmentClass = GameHistoryFragment.class;
+            item.setChecked(true);
         } else if (id == R.id.logout) {
+            item.setChecked(true);
             new GetLogout().execute(sharedPreferences.getString("_id", null));
             fragment_flag = false;
         }

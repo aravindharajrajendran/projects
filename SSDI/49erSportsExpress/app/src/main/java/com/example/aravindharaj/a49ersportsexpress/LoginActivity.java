@@ -113,6 +113,7 @@ public class LoginActivity extends AppCompatActivity {
                 editor.putString("lastname", result.split(",")[2]);
                 editor.putString("email", result.split(",")[3]);
                 editor.putString("keeploggedin", result.split(",")[4]);
+                editor.putString("picture", result.split(",")[5]);
                 editor.apply();
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
