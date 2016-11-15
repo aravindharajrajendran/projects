@@ -1,14 +1,87 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:orientation="vertical"
     tools:context="com.example.aravindharaj.a49ersportsexpress.MatchDayFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello Match Day Fragment" />
+        android:layout_weight="1">
 
-</FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#000000">
+
+            <TextView
+                android:text="Today's Events"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewToday"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:gravity="center_vertical|center_horizontal|center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listViewToday" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/colorControlHighlight">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#000000">
+
+            <TextView
+                android:text="Future Events"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewFuture"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:gravity="center_vertical|center_horizontal|center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listViewFuture" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

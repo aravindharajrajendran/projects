@@ -2,13 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="5dp"
     tools:context="com.example.aravindharaj.a49ersportsexpress.FitnessStudioFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello Fitness Studio Fragment" />
-
+        android:id="@+id/listViewFitnessStudio" />
 </FrameLayout>

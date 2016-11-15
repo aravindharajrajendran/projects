@@ -2,12 +2,14 @@ package com.example.aravindharaj.a49ersportsexpress;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -30,7 +32,7 @@ public class UserFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_user, container, false);
-        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("sportsexpress", Context.MODE_PRIVATE);
+        final SharedPreferences sharedPreferences = getActivity().getSharedPreferences("sportsexpress", Context.MODE_PRIVATE);
         ImageView imageView = (ImageView) view.findViewById(R.id.imageViewUser);
         Picasso.with(getActivity()).load(sharedPreferences.getString("picture", null)).into(imageView);
         EditText editTextUsername = (EditText) view.findViewById(R.id.editTextUsername);
@@ -45,6 +47,15 @@ public class UserFragment extends Fragment {
         EditText editTextEmail = (EditText) view.findViewById(R.id.editTextEmail);
         editTextEmail.setText(sharedPreferences.getString("email", null));
         editTextEmail.setFocusable(false);
+        Button button = (Button) view.findViewById(R.id.buttonHistory);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), TicketHistoryActivity.class);
+                intent.putExtra("user", sharedPreferences.getString("_id", null));
+                startActivity(intent);
+            }
+        });
         return view;
     }
 }

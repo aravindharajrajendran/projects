@@ -2,13 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="5dp"
     tools:context="com.example.aravindharaj.a49ersportsexpress.EquipmentFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <GridView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello Equipment Fragment" />
-
+        android:id="@+id/gridView"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"/>
 </FrameLayout>
