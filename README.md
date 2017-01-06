@@ -53,9 +53,13 @@ SOFTWARE SYSTEM DESIGN & IMPLEMENTATION - "49ers Sports Express"
 An Android application backed by Node.js API and MongoDB database that helps all the students of UNC Charlotte to view or spectate various sports tournaments, visit gym, purchase tickets for the in-house games and also view match and game day stats for the games played.
 
 Project Description:
+https://github.com/aravindharajrajendran/projects/blob/master/SSDI/Project%20Description.docx
 
 Presentation:
+https://github.com/aravindharajrajendran/projects/blob/master/SSDI/Presentation.pdf
 
 Technical Documentation: 
+https://github.com/aravindharajrajendran/projects/blob/master/SSDI/Technical%20Documentation.docx
 
 User Documentation: 
+https://github.com/aravindharajrajendran/projects/blob/master/SSDI/User%20Documentation.docx
