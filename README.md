@@ -30,7 +30,7 @@ Learn more about the project here: https://github.com/aravindharajrajendran/proj
 
 DATABASE MANAGEMENT SYSTEMS - "BetterMe"
 
-A PHP and MySQL based Web Application developed to track activity related to the user’s health and wellbeing and provide tools for the user to analyze patterns and establish improved health habits
+A PHP and MySQL based Web Application developed to track activity related to the user’s health and wellbeing and provide tools for the user to analyze patterns and establish improved health habits.
 
 Learn more about the project here: https://github.com/aravindharajrajendran/projects/blob/master/Documentation/BetterMe%20Report.pdf
 
@@ -38,10 +38,24 @@ Learn more about the project here: https://github.com/aravindharajrajendran/proj
 
 BIG DATA ANALYTICS FOR COMPETITIVE ADVANTAGE - "Predictive Analysis on the Fortune 500 company's success"
 
- A Big Data approach to predict which of the following factors directly impact a Fortune 500 company’s success: Company Innovation, Corporate Social Responsibility, GDP, Patents filed, Political and Election contributions
+A Big Data approach to predict which of the following factors directly impact a Fortune 500 company’s success: Company Innovation, Corporate Social Responsibility, GDP, Patents filed, Political and Election contributions.
 
 Presentation: https://github.com/aravindharajrajendran/projects/blob/master/Big%20Data/Presentation.pptx
 
 Managerial Report: https://github.com/aravindharajrajendran/projects/blob/master/Big%20Data/Managerial_Report.docx
 
 Technical Report: https://github.com/aravindharajrajendran/projects/blob/master/Big%20Data/Technical_Report.docx
+
+---------------------------------------------------------------------------------------------
+
+SOFTWARE SYSTEM DESIGN & IMPLEMENTATION - "49ers Sports Express"
+
+An Android application backed by Node.js API and MongoDB database that helps all the students of UNC Charlotte to view or spectate various sports tournaments, visit gym, purchase tickets for the in-house games and also view match and game day stats for the games played.
+
+Project Description:
+
+Presentation:
+
+Technical Documentation: 
+
+User Documentation: 
