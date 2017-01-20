@@ -1,0 +1,5 @@
+Step - 1 : Website showing the list of products that belong to the Men's Shirting category. This website is scraped initially to get the links of all the individual shirt webpages.
+Step - 2 involves scraping different contents from each and every individual shirt webpages.
+Step - 2, Part - 1: Highlights the scraped contents such as the Product Title, Overall Product Rating, Overall Product Review, and Product Price.
+Step - 2, Part - 2: Highlights the scraped specification table of the Product.
+Step - 2, Part - 3: Highlights the scraped contents such as the Overall Reviews Summary, Individual User Reviews.
