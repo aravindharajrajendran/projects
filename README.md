@@ -63,3 +63,14 @@ https://github.com/aravindharajrajendran/projects/blob/master/SSDI/Technical%20D
 
 User Documentation: 
 https://github.com/aravindharajrajendran/projects/blob/master/SSDI/User%20Documentation.docx
+
+---------------------------------------------------------------------------------------------
+
+WEB SCRAPING IN PYTHON
+
+A simple Web Scraping program developed using the lxml and BeautifulSoup packages. 
+It first gets all the products listed in the Men's Shirting section of the online shopping website: www.overstock.com
+Then, the program loads and parses each individual product website iteratively and scrapes different contents from the product website.
+Finally, the scraped contents are loaded into the MongoDB database.
+
+
